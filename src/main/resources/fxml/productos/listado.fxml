@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.GridView?>
+
+
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import org.kordamp.ikonli.javafx.StackedFontIcon?>
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ies.accesodatos.ui.productos.view.ListadoProductosView"
+      stylesheets="@../../css/TextFields.css, @../../css/Buttons.css, @../../css/Main.css">
+
+
+    <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="50.0" VBox.vgrow="ALWAYS">
+        <children>
+            <ToolBar maxHeight="-Infinity" prefHeight="40.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                <items>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <MFXButton fx:id="add" text="">
+
+                        <graphic>
+                            <FontIcon iconLiteral="anto-file-add:24:#FFC72C" />
+                        </graphic>
+
+                    </MFXButton>
+                    <MFXButton fx:id="up" text="">
+
+                        <graphic>
+                            <FontIcon iconLiteral="anto-arrow-left:24:#FFC72C" />
+                        </graphic>
+
+                    </MFXButton>
+
+
+                    <MFXTextField fx:id="searchField" text="Filtrar" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="300" />
+
+                </items>
+                <HBox.margin>
+                    <Insets left="4" />
+                </HBox.margin>
+            </ToolBar>
+        </children>
+    </HBox>
+    <VBox>
+        <Label alignment="CENTER" fx:id="titulo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+               styleClass="header-label" text="Listado productos"/>
+    </VBox>
+<GridView fx:id="grid" styleClass="grid-pane" VBox.vgrow="ALWAYS">
+
+</GridView>
+</VBox>

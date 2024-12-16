@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<GridPane alignment="CENTER" hgap="20.0" style="-fx-border-color: #ffffff;-fx-border-insets: 4 4 4 4;"
+          styleClass="grid-pane" stylesheets="@../../css/TextFields.css, @../../css/Buttons.css" vgap="20.0"
+
+          xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="ies.accesodatos.ui.productos.view.FormularioProductoView">
+    <padding>
+        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+    </padding>
+
+    <Label alignment="CENTER" fx:id="titulo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+           styleClass="header-label" text="FORMULARIO PRODUCTOS
+" GridPane.columnSpan="2"/>
+
+    <VBox spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+        <padding>
+            <Insets right="10.0"/>
+        </padding>
+        <MFXTextField fx:id="nombre" floatMode="BORDER" floatingText="Nombre"
+                      style="-fx-min-width: 300" VBox.vgrow="ALWAYS"/>
+        <Label fx:id="validationNombre" maxWidth="1.7976931348623157E308" minHeight="-Infinity" textFill="#ef6e6b"
+               visible="false" wrapText="true"/>
+    </VBox>
+
+    <VBox spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+        <padding>
+            <Insets right="10.0"/>
+        </padding>
+        <MFXTextField fx:id="precio" floatMode="BORDER" floatingText="Precio"
+                      style="-fx-min-width: 300;" VBox.vgrow="ALWAYS"/>
+        <Label fx:id="validationPrecio" maxWidth="1.7976931348623157E308" minHeight="-Infinity" textFill="#ef6e6b"
+               visible="false" wrapText="true"/>
+    </VBox>
+
+
+
+    <VBox spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+        <padding>
+            <Insets right="10.0"/>
+        </padding>
+        <MFXTextField fx:id="descripcion"   floatMode="BORDER" floatingText="Descripcion"
+                      style="-fx-min-width: 300;" VBox.vgrow="ALWAYS"/>
+        <Label fx:id="validationDescripcion" maxWidth="1.7976931348623157E308" minHeight="-Infinity" textFill="#ef6e6b"
+               visible="false" wrapText="true"/>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+
+
+        <HBox alignment="TOP_LEFT"   VBox.vgrow="ALWAYS" >
+            <children>
+
+                <MFXTextField fx:id="path" floatMode="BORDER" floatingText="Path"
+                              style="-fx-min-width: 300;" disable="true"
+                />
+                <MFXButton fx:id="selectImageButton"  minWidth="24" buttonType="RAISED" styleClass="outline-button" text=""
+                           HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="7.0" top="5"/>
+                    </HBox.margin>
+                    <graphic>
+                        <FontIcon iconLiteral="antf-picture:16:#FFC72C" />
+                    </graphic>
+                </MFXButton>
+            </children>
+
+        </HBox>
+
+        <Label fx:id="validationImagen"
+               textFill="#ef6e6b" visible="false" wrapText="true"/>
+
+    </VBox>
+
+
+    <MFXToggleButton fx:id="activo" alignment="CENTER_LEFT" text="Activo" GridPane.columnSpan="2"
+                     GridPane.rowIndex="5"/>
+    <VBox spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+        <padding>
+            <Insets right="10.0"/>
+        </padding>
+        <MFXComboBox fx:id="categoria" floatMode="BORDER" floatingText="Categoria"/>
+        <Label fx:id="validationCategoria" maxWidth="1.7976931348623157E308" minHeight="-Infinity" textFill="#ef6e6b"
+               visible="false" wrapText="true"/>
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="5.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+        <padding>
+            <Insets right="1.0"/>
+        </padding>
+        <MFXButton fx:id="aceptar" buttonType="RAISED" styleClass="outline-button"  text="Aceptar" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets right="50.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon iconLiteral="anto-check-circle:24:#FFC72C" />
+            </graphic>
+        </MFXButton>
+        <MFXButton fx:id="cancelar" buttonType="RAISED" styleClass="outline-button" text="Cancelar">
+            <HBox.margin>
+                <Insets right="50.0"/>
+            </HBox.margin>
+            <graphic>
+                <FontIcon iconLiteral="anto-close-circle:24:#FFC72C" />
+            </graphic>
+        </MFXButton>
+
+
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+
+
+</GridPane>

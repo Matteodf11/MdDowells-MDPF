@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Thu Nov 14 16:24:35 CET 2024:
+ Iniciando instancia a816c00e-0193-2b46-b846-00000707db48 de Derby, versión The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): 
+en el directorio de base de datos /home/matdipfor/Escriptori/AD/MdDowellsTemplate-master/database/mcdowellsMDPF con el cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@4f2410ac
+Cargado desde file:/home/matdipfor/Baixades/db-derby-10.16.1.1-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=21.0.2+13-58
+user.dir=/home/matdipfor/Escriptori/AD/MdDowellsTemplate-master/database
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-75-generic
+derby.system.home=null
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Nov 14 16:26:24 CET 2024: cerrando motor de Derby
+----------------------------------------------------------------
+Thu Nov 14 16:26:24 CET 2024:
+Cerrando la instancia a816c00e-0193-2b46-b846-00000707db48 en el directorio de base de datos /home/matdipfor/Escriptori/AD/MdDowellsTemplate-master/database/mcdowellsMDPF con cargador de clases jdk.internal.loader.ClassLoaders$AppClassLoader@4f2410ac
+----------------------------------------------------------------
